@@ -24,3 +24,33 @@ document.querySelectorAll('nav a').forEach(link => {
         });
     });
 });
+
+document.getElementById("bookingForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const nama = document.getElementById("nama").value;
+    const wa = document.getElementById("wa").value;
+    const tanggal = document.getElementById("tanggal").value;
+    const lokasi = document.getElementById("lokasi").value;
+    const paket = document.getElementById("paket").value;
+    const catatan = document.getElementById("catatan").value;
+
+    const pesan =
+`Halo EL Organizer.
+
+Saya ingin booking.
+
+Nama: ${nama}
+WhatsApp: ${wa}
+Tanggal: ${tanggal}
+Lokasi: ${lokasi}
+Paket: ${paket}
+
+Catatan:
+${catatan}`;
+
+    window.open(
+        `https://wa.me/6282269544889?text=${encodeURIComponent(pesan)}`,
+        "_blank"
+    );
+});
