@@ -67,38 +67,85 @@ background:#000;
 text-align:center;
 padding:30px;
 }
+  .hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('https://images.unsplash.com/photo-1519741497674-611481863552?w=1600') center/cover;
+}
+
+.hero-logo{
+width:140px;
+margin-bottom:20px;
+border-radius:50%;
+background:white;
+padding:10px;
+}
+
+.subtitle{
+letter-spacing:4px;
+text-transform:uppercase;
+color:#D4AF37;
+font-size:15px;
+}
+
+.description{
+max-width:650px;
+margin:20px auto;
+font-size:18px;
+line-height:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#D4AF37;
+color:#000;
+text-decoration:none;
+border-radius:40px;
+font-weight:bold;
+margin-top:20px;
+transition:.3s;
+}
+
+.btn:hover{
+background:#fff;
+transform:translateY(-3px);
+}
 </style>
 </head>
 
 <body>
 
 <header>
+  <header class="hero" id="home">
 
-<div>
+    <div class="hero-content">
 
-<h1>💍 EL Organizer</h1>
+        <img src="images/logo.png" class="hero-logo" alt="EL Organizer">
 
-<h2 style="color:#D4AF37;">
-Wedding Organizer Profesional
-</h2>
+        <p class="subtitle">Wedding & Event Planner</p>
 
-<p>
-Melayani Bireuen dan seluruh wilayah Aceh dengan pelayanan yang elegan, profesional, dan penuh perhatian.
-</p>
+        <h1>EL Organizer</h1>
 
-<a href="https://wa.me/6282269544889" class="btn">
-💬 Booking via WhatsApp
-</a></h1>
+        <p class="description">
+            Mewujudkan Pernikahan Impian Anda dengan pelayanan profesional,
+            dekorasi elegan, dan tim yang berpengalaman.
+        </p>
 
-<p>Mewujudkan Pernikahan Impian Anda</p>
+        <a href="https://wa.me/6282269544889?text=Halo%20EL%20Organizer,%20saya%20ingin%20konsultasi%20pernikahan."
+        class="btn">
+            Konsultasi Gratis
+        </a>
 
-<a href="https://wa.me/6282269544889" class="btn">
-Booking Sekarang
-</a>
+    </div>
 
-</div>
+  </header>
 
-</header>
 
 <section>
 
